@@ -4,26 +4,57 @@ layout: default
 
 <div class="row well">
 
-<div class="row">
-<div class="col-md-6">
+<div class="col-md-6"> <!-- left -->
+<div class="row well"> <!-- inner row well 1 (left) -->
+  <h3> What's New </h3>
+  <ul class="posts list-unstyled">
+    {% for post in site.posts limit:1 %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" 
+          href="{{ post.url | prepend: site.baseurl }}"
+          >{{ post.title }}</a>
+        <p> {{ post.content }} </p>
+      </li>
+    {% endfor %}
+  </ul>
+</div> <!-- /inner row well 1 (left) -->
+<div class="row well"> <!-- inner row well 2 (left) -->
+  <p class="rss-subscribe">
+    subscribe to the class newsfeed
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>, <br />
+    or use one of the <a href="http://ifttt.com">ifttt</a> recipies below
+    to have the latest news automatically sent to you by email.
+    {% include feedlink.html %}
+  </p>
+</div> <!-- /inner row well 2 (left) -->
+
+{% for post in site.posts offset:1 limit:1 %}
+{% comment %} i.e. if not empty then do... {% endcomment %}
+<div class="row well"> <!-- inner row well 3 (left) -->
+  <h3> News Archive </h3>
+  <ul class="list-unstyled">
+    {% for post in site.posts offset:1 %}
+      <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div> <!-- /inner row well 3 (left) -->
+{% endfor %}
+</div> <!-- /left-->
+
+
+
+<div class="col-md-5 col-md-offset-1"> <!-- right -->
+<div class="row well"> <!-- inner row well 1 (right) -->
 	<dl>
     <dt> Instructor </dt>
       <dd> Danny Krashen </dd>
     <dt> Office Hours </dt>
       <dd> TBD, Boyd 437 </dd>
-  </dl>
-</div>
-<div class="col-md-6">
-  <p>
-  <a href="syllabus.pdf">
-  <button class="btn btn-success" type="button">Course Syllabus</button>
-  </a>
-  </p>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6">
-
+    <br />
     <dt> Lecture (Section 15624) </dt>
       <dd> TuTh 9:30am - 10:45am, <a
       href="https://www.google.com/maps/place/Department+of+Poultry+Science/@33.9467965,-83.3724973,15z/data=!4m2!3m1!1s0x0:0x836bce4e12c86f36"
@@ -32,8 +63,7 @@ layout: default
       <dd> Mon 12:20pm - 1:10pm, <a
       href="https://www.google.com/maps/place/Aderhold+Hall,+The+University+of+Georgia,+Athens,+GA+30602/@33.9417606,-83.3729828,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce4ad68f8b3:0x1f8cc87b4daeef3a"
       >Aderhold Hall, Room 116</a></dd>
-      </div>
-<div class="col-md-6">
+    <br />
     <dt> Lecture (Section 25507) </dt>
       <dd> TuTh 12:30pm - 1:45pm, <a
       href="https://www.google.com/maps/place/Physics+Bldg,+The+University+of+Georgia,+Athens,+GA+30602/@33.9481823,-83.3761454,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce17741d839:0x387e91cc326b5cf7"
@@ -42,33 +72,25 @@ layout: default
       <dd> Mon 10:10am - 11:00am, <a
       href="https://www.google.com/maps/place/Physics+Bldg,+The+University+of+Georgia,+Athens,+GA+30602/@33.9481823,-83.3761454,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce17741d839:0x387e91cc326b5cf7"
       >Physics Building, Room 327</a> </dd>
-      </dl>
-</div>
+    <br />
+    <dt> Homework </dt>
+      <dd> <a href=""
+      >Available via WebWork</a>, generally due Fridays</dd>
+  </dl>
+  </dl>
+  <p>
+  <a href="syllabus.pdf">
+  <button class="btn btn-success" type="button">Course Syllabus</button>
+  </a>
+  </p>
+</div> <!-- /inner row well 2 (left) -->
 </div>
 <div class="row">
 <div class="col-md-6">
 <br />
 <dl>
-<dt> Homework </dt>
-      <dd> <a
-      href=""
-      >Available via WebWork</a>, generally due Fridays</dd>
-  </dl>
 </div>
 
-<div class="col-md-6">
-  <h3> Course News </h3>
-  <ul class="posts list-unstyled">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
 </div>
 </div>
 

@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="row well">
+
+<div class="row">
+<div class="col-md-6">
+	<dl>
+    <dt> Instructor </dt>
+      <dd> Danny Krashen </dd>
+    <dt> Office Hours </dt>
+      <dd> TBD, Boyd 437 </dd>
+  </dl>
+</div>
+<div class="col-md-6">
+  <p>
+  <a href="">
+  <button class="btn btn-success" type="button">Course Syllabus</button>
+  </a>
+  </p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+
+    <dt> Lecture (Section 15624) </dt>
+      <dd> TuTh 9:30pm - 10:45pm, <a
+      href="https://www.google.com/maps/place/Department+of+Poultry+Science/@33.9467965,-83.3724973,15z/data=!4m2!3m1!1s0x0:0x836bce4e12c86f36"
+      >Poultry Science, Room 238</a> </dd>
+    <dt> Recitation (Section 15624) </dt>
+      <dd> Mon 12:20pm - 1:10pm, <a
+      href="https://www.google.com/maps/place/Aderhold+Hall,+The+University+of+Georgia,+Athens,+GA+30602/@33.9417606,-83.3729828,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce4ad68f8b3:0x1f8cc87b4daeef3a"
+      >Aderhold Hall, Room 116</a></dd>
+      </div>
+<div class="col-md-6">
+    <dt> Lecture (Section 25507) </dt>
+      <dd> TuTh 12:30pm - 1:45pm, <a
+      href="https://www.google.com/maps/place/Physics+Bldg,+The+University+of+Georgia,+Athens,+GA+30602/@33.9481823,-83.3761454,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce17741d839:0x387e91cc326b5cf7"
+      >Physics Building, Room 327</a> </dd>
+    <dt> Recitation (Section 25507) </dt>
+      <dd> Mon 10:10am - 11:00am, <a
+      href="https://www.google.com/maps/place/Physics+Bldg,+The+University+of+Georgia,+Athens,+GA+30602/@33.9481823,-83.3761454,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce17741d839:0x387e91cc326b5cf7"
+      >Physics Building, Room 327</a> </dd>
+      </dl>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<br />
+<dl>
+<dt> Homework </dt>
+      <dd> <a
+      href=""
+      >Available via WebWork</a>, generally due Fridays</dd>
+  </dl>
+</div>
+
+<div class="col-md-6">
+  <h3> Course News </h3>
+  <ul class="posts list-unstyled">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
+</div>
+</div>
+
+

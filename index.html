@@ -6,9 +6,11 @@ layout: default
 
 <div class="col-md-6"> <!-- left -->
 <div class="row well"> <!-- inner row well 1 (left) -->
-  <h3> What's New </h3>
+  <h3> <center>What's New </center></h3>
+</div>
   <ul class="posts list-unstyled">
-    {% for post in site.posts limit:1 %}
+    {% for post in site.posts limit:2 %}
+<div class="row well"> <!-- inner row well 1 (left) -->
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" 
@@ -16,9 +18,9 @@ layout: default
           >{{ post.title }}</a>
         <p> {{ post.content }} </p>
       </li>
+</div> <!-- /inner row well 1 (left) -->
     {% endfor %}
   </ul>
-</div> <!-- /inner row well 1 (left) -->
 <div class="row well"> <!-- inner row well 2 (left) -->
   <p class="rss-subscribe">
     subscribe to the class newsfeed
@@ -34,7 +36,7 @@ layout: default
 <div class="row well"> <!-- inner row well 3 (left) -->
   <h3> News Archive </h3>
   <ul class="list-unstyled">
-    {% for post in site.posts offset:1 %}
+    {% for post in site.posts %}
       <li>
         <span>{{ post.date | date: "%b %-d, %Y" }}</span>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

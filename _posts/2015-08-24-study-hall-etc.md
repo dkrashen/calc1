@@ -11,6 +11,8 @@ categories: announcements
 
 Please take advantage of the math department study hall. You can get extra help and a chance to practice problems and interact with students from other sections. It's available for our all sections of 2250 (and a few other classes as well) in Boyd Graduate Studies Room 222, every Monday, Tuesday, Wednesday and Thursday from 3:30 to 5:30, starting today!
 
+[Departmental Study Hall Flyer]({{ site.baseurl }}/studyhall.pdf)
+
 
 ####Whitman Calculus
 

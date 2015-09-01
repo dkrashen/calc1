@@ -1,0 +1,97 @@
+\documentclass[12pt]{amsart}
+\usepackage{fullpage}
+
+\newcommand{\course}{MATH 2250}
+\newcommand{\semester}{Fall 2015}
+\newcommand{\instructor}{Danny Krashen}
+\newcommand{\website}{http://dkrashen.github.io/calc1/}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TYPICAL PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath,amssymb}
+\usepackage[all]{xy}
+\usepackage{fullpage,enumerate}
+\usepackage{url, color, hyperref}
+
+\title{\course, \semester\ (\instructor) \\ Lecture for Thursday 9-3-2015} 
+
+\begin{document}
+\maketitle
+{\color{blue}The students should have been introduced to the basic
+derivative rules, sum rule, constant multiple rule, product rule, quotient
+rule, power rule from chapter 3.3. They have not seen yet the chain rule or
+derivatives of exponential functions.}
+
+Lecture goal: cover derivatives of exponential and trigonometric functions.
+students should practice combining these with the derivative rules which
+they already have learned.
+
+\begin{enumerate}[1. ]
+\setlength{\itemsep}{.3cm}
+\item (15 minutes?)
+Reminder of Derivative Rules (Section 3.3)
+\begin{enumerate}[ i. ]
+\item
+Write the product rule, quotient rule and power rules on the board.
+\item
+Work out the derivative of $f(x) = x^7 + x^3 - 1$, $f(x) = x^3 - 4 \sqrt[3]
+x - \frac 1x$, and $\displaystyle f(x) = \frac{x^2 - 9}{\sqrt x + 1}$.
+\end{enumerate}
+
+\item (20 minutes?)
+Exponential function and its derivative (section 3.3)
+\begin{enumerate}[ i. ]
+\item
+Use the definition of the derivative to work out for $f(x) = a^x$ that
+$$\displaystyle f'(x) = a^x \left(\lim_{h \to 0} \frac{a^h -
+1}{h}\right).$$
+\item
+State that the number $e$ is the unique number with the property that
+
+$\lim_{h \to 0} (e^h - 1)/h = 1$, and so $(e^x)' = e^x$.
+\item
+calculate $f'(x)$ for $f(x) = \frac{e^x + 1}{1 - x^2}$.
+\end{enumerate}
+
+\item (20 minutes?)
+Derivative of trig functions (section 3.5)
+\begin{enumerate}[ i. ]
+\item
+Use the definition of the derivative, the sum formula to work out $(\sin x)'
+= \cos x$ (beginning of section 3.5). students have seen limits of $\sin x
+/ x$ and $(\cos x - 1)/x$ as $x \to 0$. 
+\item
+Show $(\cos x)' = \sin x$. Feel free to skip details, as they have just
+seen the basic idea with sine.
+\item
+calculate $f'(x)$ for $f(x) = 5 e^x + \cos x$, for $f(x) = \sin x \cos x$
+and for $\displaystyle f(x) = \frac{\cos x}{1 - \sin x}$. 
+\end{enumerate}
+
+\item (20 minutes?)
+Group work.
+
+With the time remaining (if any), tell the students to break up into groups
+and work on some practice problems like these (write them on the board,
+students know well how to break up into groups of about 2-4 students each
+and work on problems). They should calculate the derivatives of the
+following functions:
+\begin{enumerate}[ i. ]
+\item
+$\tan x$
+\item
+$\sec x$
+\item
+$\csc x$
+\item
+$\cot x$
+\item (if they finish the others with time to spare)
+$\displaystyle \left(\frac{3x - \tan x}{\sec x + \cos x}\right) e^x \sqrt x$
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}

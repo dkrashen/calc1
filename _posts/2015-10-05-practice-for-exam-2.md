@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title:  "Practice Sheet for Exam 1"
-date:   2015-10-02
+title:  "Practice Sheet for Exam 2"
+date:   2015-10-05
 categories: announcements 
 
 ---

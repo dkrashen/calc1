@@ -66,4 +66,7 @@
   description: "Ingegrating secant cubed"
 - title: "Lecture 23"
   filename: "lecture23.pdf"
-  description: "Approximation"
+  description: "Further Topics: Approximation"
+- title: "Lecture 24"
+  filename: "lecture24.pdf"
+  description: "Further Topics: Optimization"

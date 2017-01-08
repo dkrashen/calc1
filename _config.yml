@@ -3,7 +3,7 @@ testing: true
 # Site settings
 title: "Calculus 1"
 email: "&#100;&#107;&#114;&#97;&#115;&#104;&#101;&#110;&#64;&#109;&#97;&#116;&#104;&#46;&#117;&#103;&#97;&#46;&#101;&#100;&#117;&#13;&#10;&#13;&#10;"
-tagline: "UGA MATH 2250, Fall 2015." 
+tagline: "UGA MATH 2250, Spring 2017." 
 description: "Limits and continuity, derivatives, related rates and
 optimization, definite and indefinite integrals, the fundamental theorem of
 calculus."

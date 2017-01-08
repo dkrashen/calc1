@@ -4,7 +4,42 @@ layout: default
 
 instructor: "Danny Krashen"
 office: "Boyd 437"
-office-hour: "Tu 2:00pm-3:00pm, Boyd 437"
+office-hour: "TBA, Boyd 437"
+sections:
+  -  
+    number: "43142"
+    meetings:
+      - 
+        title: "Lecture"
+        days: "TuTh"
+        time: "12:30pm - 1:45pm"
+        room: "300A"
+        building: "Geography and Geology"
+        maplink: "https://www.google.com/maps/place/Geology+Department/@33.9483539,-83.3785668,17z/data=!4m8!1m2!2m1!1suga+geography+geology+building!3m4!1s0x88f66ce4217778af:0x7d6af78e91e189d3!8m2!3d33.9487026!4d-83.3754342"
+      - 
+        title: "Recitation"
+        days: "Mon"
+        time: "12:20pm - 1:10pm"
+        room: "418"
+        building: "Forestry Resources, Building 4"
+        maplink: "https://www.google.com/maps/place/Forestry+Resources+Building+4,+Athens,+GA+30602/@33.9436464,-83.3750391,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x88f66ce370560823:0xee8db1fdef575eca!2sDaniel+B.+Warnell+School+of+Forestry+and+Natural+Resources!8m2!3d33.943993!4d-83.37441!3m4!1s0x88f66ce36efba7e7:0xa28f9b54c998ece6!8m2!3d33.9436332!4d-83.3744845"
+  -  
+    number: "43008"
+    meetings:
+    - 
+      title: "Lecture"
+      days: "TuTh"
+      time: "2:00pm - 3:15pm"
+      room: "300A"
+      building: "Geography and Geology"
+      maplink: "https://www.google.com/maps/place/Geology+Department/@33.9483539,-83.3785668,17z/data=!4m8!1m2!2m1!1suga+geography+geology+building!3m4!1s0x88f66ce4217778af:0x7d6af78e91e189d3!8m2!3d33.9487026!4d-83.3754342"
+    - 
+      title: "Recitation"
+      days: "Mon"
+      time: "1:25pm - 2:15pm"
+      room: "112"
+      building: "Aderhold"
+      maplink: "https://www.google.com/maps/place/Aderhold+Hall,+Athens,+GA+30602/@33.9416132,-83.3743279,18z/data=!3m1!5s0x88f66ce4b29882c3:0x8735d0027c65e825!4m8!1m2!2m1!1suga+college+of+education!3m4!1s0x88f66ce4ad68f8b3:0x1f8cc87b4daeef3a!8m2!3d33.9416937!4d-83.3728795"
 
 ---
 
@@ -30,11 +65,7 @@ office-hour: "Tu 2:00pm-3:00pm, Boyd 437"
 <div class="row well"> <!-- inner row well 2 (left) -->
   <p class="rss-subscribe">
     subscribe to the class newsfeed
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>, <br />
-    or use one of the <a href="http://ifttt.com">ifttt</a> recipies below
-    to have the latest news automatically sent to you by email.
-    {% include feedlink.html %}
-  </p>
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>  </p>
 </div> <!-- /inner row well 2 (left) -->
 
 {% for post in site.posts offset:1 limit:1 %}
@@ -63,39 +94,33 @@ office-hour: "Tu 2:00pm-3:00pm, Boyd 437"
     <dt> Office Hour </dt>
       <dd> {{ page.office-hour }} </dd>
     <br />
-    <dt> Lecture (Section 15624) </dt>
-      <dd> TuTh 9:30am - 10:45am, <a
-      href="https://www.google.com/maps/place/Department+of+Poultry+Science/@33.9467965,-83.3724973,15z/data=!4m2!3m1!1s0x0:0x836bce4e12c86f36"
-      >Poultry Science, Room 238</a> </dd>
-    <dt> Recitation (Section 15624) </dt>
-      <dd> Mon 12:20pm - 1:10pm, <del><a
-      href="https://www.google.com/maps/place/Department+of+Poultry+Science/@33.9467965,-83.3724973,15z/data=!4m2!3m1!1s0x0:0x836bce4e12c86f36"
-      >Poultry Science, Room 136</a></del><br /><ins>
-     <a
-     href="https://www.google.com/maps/place/Biological+Sciences+Bldg,+Athens,+GA+30602/@33.9479744,-83.374906,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce6bb6a6f45:0x372a3a922dc62e8a">Bio Sciences, Room 404D</a></ins> 
-     (our room has been changed due to ongoing construction!)
-      </dd>
+    {% for section in page.sections %}
+
+    <dt> <h4>Section {{ section.number }}</h4> </dt>
+      {% for meeting in section.meetings %}
+      <dd> {{ meeting.title }} {{ meeting.days }} {{ meeting.time }} 
+      <br /> {{ meeting.building }}, room {{ meeting.room }}
+      (<a href="{{ meeting.maplink }}">map</a>) </dd>
+      <br />
+      {% endfor %}
+
     <br />
-    <dt> Lecture (Section 25507) </dt>
-      <dd> TuTh 12:30pm - 1:45pm, <a
-      href="https://www.google.com/maps/place/Physics+Bldg,+The+University+of+Georgia,+Athens,+GA+30602/@33.9481823,-83.3761454,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce17741d839:0x387e91cc326b5cf7"
-      >Physics Building, Room 327</a> </dd>
-    <dt> Recitation (Section 25507) </dt>
-      <dd> Mon 10:10am - 11:00am, <a
-      href="https://www.google.com/maps/place/Physics+Bldg,+The+University+of+Georgia,+Athens,+GA+30602/@33.9481823,-83.3761454,17z/data=!3m1!4b1!4m2!3m1!1s0x88f66ce17741d839:0x387e91cc326b5cf7"
-      >Physics Building, Room 327</a> </dd>
-    <br />
+
+    {% endfor %}
+
     <dt> Homework </dt>
       <dd> <a
-      href="https://webwork.math.uga.edu/webwork2/Math2250_Krashen_F15/"
-      >Available via WebWork</a>, generally due Fridays</dd>
+      href="https://webwork.math.uga.edu/webwork2/Math2250_Krashen_S17/"
+      >Available via WebWork</a>, generally due Wednesdays</dd>
   </dl>
   </dl>
+  <!--
   <p>
   <a href="syllabus.pdf">
   <button class="btn btn-success" type="button">Course Syllabus</button>
   </a>
   </p>
+  -->
 </div> <!-- /inner row well 2 (left) -->
 </div>
 <div class="row">

@@ -1,9 +1,10 @@
 ---
 
-course: MATH 2250
+layout: default
+course: "MATH 2250"
 semester: Fall 2017
 instructor: Danny Krashen
-officehour: "Tu 11:00am-12:15pm, Boyd 437"
+officehour: "Wed 12:30pm-2:00pm, Boyd 437"
 phone: 706-542-2555
 email: dkrashen@uga.edu
 textbook: "Free for download at https://github.com/dkrashen/calc-text/raw/master/textbook.pdf"
@@ -13,7 +14,7 @@ website: "http://dkrashen.github.io/calc1/"
 ---
 
 
-# {{ page.course, page.semester }}
+# Syllabus {{ page.course, page.semester }}
 
 ## Instructor: {{ page.instructor }}
 

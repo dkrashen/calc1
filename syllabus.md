@@ -39,7 +39,7 @@ maximization).
 
 ### Grading Policy
 
- - 3 Mid-semester exams worth 20% each (Feb 16, Mar 14, Apr 11)
+ - 3 Mid-semester exams worth 20% each (Feb 16, **Mar 16**, Apr 11)
  - Homework worth 15% (lowest 2 scores are dropped), 
  - Final exam worth 25% 
 

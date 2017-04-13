@@ -7,7 +7,7 @@ categories: announcements
 
 ---
 
-Grades for the third exam are in and available on [eLC](https://uga.view.usg.edu/). You can see the overall grade distrubution below as well as the corresponding letter grades.
+Grades for the first exam are in and available on [eLC](https://uga.view.usg.edu/). You can see the overall grade distrubution below as well as the corresponding letter grades.
 
 [Grade Distribution][grades]
 

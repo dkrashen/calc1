@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "Exam 2 Grades"
+title:  "Exam 1 Grades"
 date:   2017-02-27
 categories: announcements 
 

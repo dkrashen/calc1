@@ -7,7 +7,7 @@ categories: announcements
 
 ---
 
-The practice sheet for the first exam is now available here: [Practice
+The practice sheet for the second exam is now available here: [Practice
 Sheet](http://dkrashen.github.io/calc1/practice2.pdf)
 
 As we discussed in class, we will be reviewing on Monday and Tuesday the week after spring break, and the exam will be on Thursday.

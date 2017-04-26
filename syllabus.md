@@ -45,6 +45,8 @@ maximization).
 
 ### Final Exams
 
+*All final exams will be held in Boyd Graduate Studies Building, Room 222!*
+
  - The final exam for section 43142 is scheduled for Tuesday, May 2
 12:00 - 3:00 pm.
  - The final exam for section 43008 is scheduled for Thursday, May 4
